@@ -1,8 +1,9 @@
 package com.appynitty.sba_bhadravati;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.appynitty.swachbharatabhiyanlibrary.activity.SplashScreenActivity;
 import com.appynitty.swachbharatabhiyanlibrary.utils.AUtils;
