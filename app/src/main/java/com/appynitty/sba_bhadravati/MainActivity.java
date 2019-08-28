@@ -7,8 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.appynitty.swachbharatabhiyanlibrary.activity.SplashScreenActivity;
 import com.appynitty.swachbharatabhiyanlibrary.utils.AUtils;
-
-import quickutils.core.QuickUtils;
+import com.pixplicity.easyprefs.library.Prefs;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,10 +16,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        QuickUtils.prefs.save(AUtils.APP_ID, "1003");
-        QuickUtils.prefs.save(AUtils.VERSION_CODE, BuildConfig.VERSION_CODE);
+        Prefs.putString(AUtils.APP_ID, "1003");
+        Prefs.putInt(AUtils.VERSION_CODE, BuildConfig.VERSION_CODE);
 
         startActivity(new Intent(MainActivity.this, SplashScreenActivity.class));
+
     }
 
     @Override
