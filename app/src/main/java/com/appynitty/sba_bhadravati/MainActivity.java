@@ -34,29 +34,29 @@ public class MainActivity extends AppCompatActivity {
         Prefs.putString(AUtils.APP_ID, "1003");
         Prefs.putInt(AUtils.VERSION_CODE, BuildConfig.VERSION_CODE);
 
-        initLanguageList();
+//        initLanguageList();
 
         startActivity(new Intent(MainActivity.this, SplashScreenActivity.class));
 
     }
 
-    private void initLanguageList() {
-
-        ArrayList<LanguagePojo> languagePojos = new ArrayList<>();
-
-        LanguagePojo eng = new LanguagePojo();
-        eng.setLanguage(AUtils.LanguageNameConstants.ENGLISH);
-        eng.setLanguageId(AUtils.LanguageIDConstants.ENGLISH);
-        languagePojos.add(eng);
-
-        LanguagePojo mar = new LanguagePojo();
-        mar.setLanguageId(AUtils.LanguageIDConstants.MARATHI);
-        mar.setLanguage(AUtils.LanguageNameConstants.MARATHI);
-        languagePojos.add(mar);
-
-        AUtils.setLanguagePojoList(languagePojos);
-
-    }
+//    private void initLanguageList() {
+//
+//        ArrayList<LanguagePojo> languagePojos = new ArrayList<>();
+//
+//        LanguagePojo eng = new LanguagePojo();
+//        eng.setLanguage(AUtils.LanguageNameConstants.ENGLISH);
+//        eng.setLanguageId(AUtils.LanguageIDConstants.ENGLISH);
+//        languagePojos.add(eng);
+//
+//        LanguagePojo mar = new LanguagePojo();
+//        mar.setLanguageId(AUtils.LanguageIDConstants.MARATHI);
+//        mar.setLanguage(AUtils.LanguageNameConstants.MARATHI);
+//        languagePojos.add(mar);
+//
+//        AUtils.setLanguagePojoList(languagePojos);
+//
+//    }
 
     @Override
     protected void onPause() {
