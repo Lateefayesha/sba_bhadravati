@@ -8,12 +8,11 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.appynitty.swachbharatabhiyanlibrary.activity.SplashScreenActivity;
-import com.appynitty.swachbharatabhiyanlibrary.pojos.LanguagePojo;
 import com.appynitty.swachbharatabhiyanlibrary.utils.AUtils;
 import com.pixplicity.easyprefs.library.Prefs;
 import com.riaylibrary.utils.LocaleHelper;
 
-import java.util.ArrayList;
+
 
 public class MainActivity extends AppCompatActivity {
 
